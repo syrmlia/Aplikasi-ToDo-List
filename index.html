@@ -3,47 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplikasi To Do List</title>
+    <title>Blue To-Do List</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-gradient"></div>
+    <div class="bg-blue-gradient"></div>
     <div class="app-container">
         <header>
             <div class="profile">
-                <div class="avatar">Musyira Amalia</div>
+                <div class="avatar">MA</div>
                 <div class="user-text">
-                    <p>Welcome back,</p>
+                    <p>Program By</p>
                     <span class="username">Musyira Amalia</span>
                 </div>
             </div>
-            <button class="logout-btn">Logout</button>
+            <button class="logout-btn">User</button>
         </header>
 
         <section class="content-card">
-            <h2 class="title">Manage Your Tasks</h2>
+            <h2 class="title">To-Do List</h2>
             
             <div class="input-wrapper">
-                <input type="text" id="taskInput" placeholder="What needs to be done?">
-                <button id="addBtn">Add Task</button>
+                <input type="text" id="taskInput" placeholder="Ketik tugas di sini...">
+                
+                <select id="priorityInput">
+                    <option value="High">🔴 High</option>
+                    <option value="Medium" selected>🟡 Medium</option>
+                    <option value="Low">🟢 Low</option>
+                </select>
+
+                <button id="addBtn">Tambah</button>
             </div>
 
             <div class="filter-tabs">
-                <button class="tab active" onclick="filterTasks('all', this)">All</button>
-                <button class="tab" onclick="filterTasks('done', this)">Completed</button>
-                <button class="tab" onclick="filterTasks('undone', this)">Pending</button>
+                <button class="tab active" onclick="filterTasks('all', this)">Semua</button>
+                <button class="tab" onclick="filterTasks('done', this)">Selesai</button>
+                <button class="tab" onclick="filterTasks('undone', this)">Belum</button>
             </div>
 
-            <div class="table-scroll">
+            <div class="table-container">
                 <table>
                     <thead>
                         <tr>
-                            <th>Task Details</th>
-                            <th style="text-align: right;">Actions</th>
+                            <th>Nama Tugas</th>
+                            <th class="text-right">Aksi</th>
                         </tr>
                     </thead>
-                    <tbody id="taskList"></tbody>
+                    <tbody id="taskList">
+                        </tbody>
                 </table>
             </div>
         </section>
