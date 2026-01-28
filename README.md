@@ -4,9 +4,15 @@ A simple web-based to-do list application built to practice front-end developmen
 
 ## Features
 - Add new tasks
+- Edit tasks
 - Mark tasks as completed
 - Delete tasks
-- Simple and clean user interface
+- Tasks are saved using LocalStorage
+
+## What I Learned
+- JavaScript DOM manipulation
+- Managing data persistence with LocalStorage
+- Handling user interactions
 
 ## Tech Stack
 - HTML
