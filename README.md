@@ -17,7 +17,7 @@ A simple web-based to-do list application built to practice front-end developmen
 This project was created as a mini project to improve my understanding of JavaScript DOM manipulation and basic front-end logic.
 
 ## Screenshot
-(Add screenshot here)
+![To-Do List App](SS Demo.png)
 
 ## Live Demo
-(Add link if deployed)
+https://syrmlia.github.io/Aplikasi-ToDo-List/
